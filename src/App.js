@@ -7,17 +7,19 @@ class App extends Component {
     logoClick: false
   }
 
+  componentDidMount() {
+    setTimeout(()=>{
+      this.handleLogoClick()
+    },3000)
+  }
+  
+
+
   handleLogoClick = () => {
     this.setState({
       logoClick: true
     })
     this.playSound()
-
-    setTimeout(() => {
-      this.setState({
-        logoClick: false
-      })
-    }, 3000);
   }
 
   playSound = () => {
@@ -31,6 +33,12 @@ class App extends Component {
     //   } 
     // }
     aud.play()
+    setTimeout(() => {
+      this.setState({
+        logoClick: false
+      })
+    }, 2000);
+
   }
 
 
@@ -40,12 +48,11 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <div className={this.state.logoClick ? "App-logo-click" : "App-logo"} onClick={this.handleLogoClick} />
-          <audio ref="audio" >
-            <source src="logoSound.wav" type="audio/wav" />
+          <audio ref="audio">
+            <source src="audio/logoSound.mp3" type="audio/mp3" />
           </audio>
           <h2>Happy Birthday Alisa</h2>
         </div>
-
         <Home />
       </div>
     );
