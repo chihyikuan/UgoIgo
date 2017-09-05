@@ -6,6 +6,18 @@
     /* animation: App-logo-spin infinite 20s linear; */
     height: 80px;
     width: 80px;
+    background: url("image/logo.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.App-logo-click {
+    /* animation: App-logo-spin infinite 20s linear; */
+    height: 80px;
+    width: 80px;
     background: url("image/logo.gif");
     background-repeat: no-repeat;
     background-position: center;
