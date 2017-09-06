@@ -6,3 +6,28 @@
     background-repeat: no-repeat;
      background-position: center
 }
+
+#Home .textBlock{
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+}
+
+#Home .text{
+    padding-top: 50px;
+    font-family: 'cwTeXYen',SimHei;
+    color: black;
+    text-shadow: 1px 1px 1px #968f8f;
+    overflow: hidden;
+    animation-name: example;
+    animation-duration: 4s;
+    height: 30px;
+    white-space:nowrap;
+    overflow: hidden;
+    margin: auto
+}
+
+@keyframes example {
+    from {width: 0px}
+    to {width: 100%}
+}
+
