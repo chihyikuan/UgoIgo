@@ -12,32 +12,57 @@
     height: 100%;
 }
 
+#Home .slideImg{
+    width: 80vw;
+    padding-top: 12px;
+    width: 95vw;
+}
+
+#Home .clickHint{
+    padding-left: 10px;
+    animation-name: click;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes click {
+    from {font-size: 15px}
+    to {font-size: 18px}
+}
+
+
 #Home .text{
+ 
     padding-top: 50px;
     font-family: 'cwTeXYen',SimHei;
     color: black;
     text-shadow: 1px 1px 1px #968f8f;
     overflow: hidden;
-    animation-name: example;
-    animation-duration: 4s;
     height: 30px;
-    white-space:nowrap;
-    overflow: hidden;
+    /* white-space:nowrap; */
+    overflow: visible;
     margin: auto
-}
-
-@keyframes example {
-    from {width: 0px}
-    to {width: 100%}
 }
 
 
 #Home .next{
-    width: 100%;
-    height: 100%;
+    width:95vw;
+    height: 100vh;
+   
+    margin: auto;
     background-image: url("image/next.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-     background-position: center
+     background-position: center;
+    cursor: pointer;
+    animation-name: next;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+
+
+@keyframes next {
+    from {width: 80vw}
+    to {width: 95vw}
 }
 

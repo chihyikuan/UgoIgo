@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Todo from './todo'
 import Home from './Home'
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+
 class App extends Component {
   state = {
     logoClick: false

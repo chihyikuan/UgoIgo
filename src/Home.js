@@ -7,17 +7,19 @@ class Home extends Component {
         isShowSlide: false
     }
     render() {
- 
-        return (
-            <div id="Home">
-                <div className="next">Next</div>
-                {this.state.isShowSlide ?
-                    <Slide />
-                    :
-                    null
-                }
 
-            </div>
+        return (
+            
+
+                <div id="Home">
+                    {this.state.isShowSlide ?
+                        <Slide onCloseSlide={() => { this.setState({ isShowSlide: false }) }} />
+                        :
+                        <div className="next" onClick={() => { this.setState({ isShowSlide: true }) }}></div>
+                    }
+                </div>
+
+            
         );
     }
 }

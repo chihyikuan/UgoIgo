@@ -34,7 +34,7 @@ class Todo extends Component {
             <div id="todo">
 
                 <input type="text" value={this.state.inputValue} onChange={(e) => { this.handleInput(e.target.value) }} />
-                <div className="save" onClick={this.handleSave}>save</div>
+                <div className="save" onClick={this.handleSave}>ToDo</div>
                 <ul>
                     {showlist}
                 </ul>
