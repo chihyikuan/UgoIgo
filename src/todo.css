@@ -1,0 +1,21 @@
+
+#todo{
+    padding-top: 10px;
+    width: 100vw;
+    height: 100vh;
+       background-image: url("image/World-map.jpg");
+       background-size: cover;
+    background-repeat: no-repeat;
+        background-position: center
+
+}
+#todo .save{
+    color:rgba(38, 38, 181, 1);
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+#todo li{
+
+text-align: left;
+}
